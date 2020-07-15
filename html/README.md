@@ -344,3 +344,11 @@ Check out [here](https://html3d.netlify.app)!
 Wondering how I made it?
 That's something you can explore in the future after you had learned Javascript!
 
+I categorize all the html tags into 5 main categories:
+
+1. Base - All the generic tags (body, head, script, etc...)
+2. Layout - The html tags that let you structure your website (div, table, main, footer, etc...)
+3. Typography - The html tags that let you have different behaviours of your text (h1, p, del, etc...)
+4. Form & Input - The html tags that let you fill up the form, accepting user input.
+5. Graphic - The html tags that let you display graphics assets (image, video, svg, or even WebGL).
+
