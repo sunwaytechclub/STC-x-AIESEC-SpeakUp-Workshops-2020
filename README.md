@@ -51,7 +51,7 @@ Instead of writing it out, how about check out a video that we made to explain a
 <br>
 <br>
 
-If everything goes well, you should have a rough understanding of what web development is, if you don't, no worries! Just lear as we go, that's how all the programmers learn --- build something!
+If everything goes well, you should have a rough understanding of what web development is, if you don't, no worries! Just learn as we go, that's how all the programmers learn --- build something!
 
 [> Redirect to HTML Workshop](/html)
 
