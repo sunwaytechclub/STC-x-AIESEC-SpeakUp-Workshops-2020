@@ -40,7 +40,7 @@ Each of them corresponding to:
 
 We are focusing on building the structure of the house (The website), which will be the HTML.
 
-Just a quick peak into how HTML looks like:
+Here is a quick peak into how HTML looks like:
 
 ```html
 <!DOCTYPE html>
@@ -88,29 +88,30 @@ Are you ready 💃? Grab a coffee if you want!
 1. Create a file called `index.html` in your desktop (or any place!)
 
     1.1 Create a txt file
-    ![1](/html/assets/tags-1.0.PNG)
+      ![1](/html/assets/tags-1.0.PNG)
 
     1.2 Name it to `index.html`
-    ![2](/html/assets/tags-1.1.PNG)
+      ![2](/html/assets/tags-1.1.PNG)
 
     1.3 You should see the icon of it became your favourite browser icon
-    ![3](/html/assets/tags-1.2.PNG)
+      ![3](/html/assets/tags-1.2.PNG)
 
 2. Open your Visual Studio Code and open the html file.
 
     2.1 Open your Visual Studio Code
-    ![1](/html/assets/tags-2.1.jpg)
+      ![1](/html/assets/tags-2.1.jpg)
 
     2.2 Click on `file` and choose `Open File...`
-    ![2](/html/assets/tags-2.2.jpg)
+      ![2](/html/assets/tags-2.2.jpg)
 
     2.3 Navigate to the `index.html` file you had just created and click `open`
 
     2.4 You should now see it open the empty `index.html` file
-    ![3](/html/assets/tags-2.3.jpg)
+      ![3](/html/assets/tags-2.3.jpg)
 
 3. Type `<h1> I am a heading! </h1>`
-  ![1](/html/assets/tags-3.1.jpg)
+
+    ![1](/html/assets/tags-3.1.jpg)
 
 4. Save it
 
@@ -119,9 +120,9 @@ Are you ready 💃? Grab a coffee if you want!
     *Hint: If you see a white dot beside the file name on the tab, it means it is not saved.
 
 5. Go to your file explorer / Finder and double click the file
-  ![1](/html/assets/tags-5.1.jpg)
+    ![1](/html/assets/tags-5.1.jpg)
   Ta daaaa
-  ![2](/html/assets/tags-5.2.jpg)
+    ![2](/html/assets/tags-5.2.jpg)
 
 ### Concepts Behind <a name="tags-concept"></a>
 
