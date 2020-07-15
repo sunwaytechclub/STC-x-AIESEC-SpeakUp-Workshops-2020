@@ -224,7 +224,7 @@ If you are seeing this message, congrats, you had made this far!
 
 Let's continue our workshop! This will be what we are trying to achieve:
 
-![output](/html/assets/paired-result.jpg)
+![output](/html/assets/attribute-result.jpg)
 
 For us to achieve, we will need to use 2 tags:
 
@@ -249,9 +249,9 @@ In our case, we need to display an image, and the browser has no idea where shou
 
 The image of the result of this module is:
 
-![this](https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg)
+![this](https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs)
 
-it is located at `https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg`, it is an url!
+it is located at `https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs`, it is an url!
 
 So in order for us to tell the browser that, we need to display the image, we have to give the browser 2 informations:
 
@@ -261,7 +261,7 @@ So in order for us to tell the browser that, we need to display the image, we ha
 The complete constructed HTML tag should be like this:
 
 ```html
-<img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg" alt="cute puppy"/>
+<img src="https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs" alt="cute puppy"/>
 ```
 
 Try to copy the code and replace into your index.html, save and refresh your page.
@@ -290,7 +290,7 @@ There are other attributes you can specify in the `<img>` too! Like:
 Example:
 
 ```html
-<img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg" alt="cute puppy" width="100" height="100"/>
+<img src="https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs" alt="cute puppy" width="100" height="100"/>
 ```
 
 ### Exercise🎽
@@ -300,7 +300,7 @@ Let's recreate the structure we want at the beginning!
 #### General step break down
 
 1. Create a `<h1>` tag, and type `I am a cute puppy!` as the content
-2. Create a `<img/>` tag, make the `src` attribute of the tag be `https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg`, `alt` be `cute puppy`
+2. Create a `<img/>` tag, make the `src` attribute of the tag be `https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs`, `alt` be `cute puppy`
 3. Save it and refresh the page
 4. Tadaaaa
 
