@@ -1,6 +1,9 @@
 # HTML Workshop 🏚
 > The backbone of a website
 
+<br>
+<br>
+
 ## Table of content <a name="table"></a>
 
 1. [Getting started](#getting-started)
@@ -25,9 +28,9 @@ To build a 🏚, we need:
 
 ![Paint](/html/assets/paint.jpg)
 
-- Door, switches, etc
+- Door, switches, etc 🚪
 
-![Door](/html/assets/door.jpg) 🚪
+![Door](/html/assets/door.jpg)
 
 Each of them corresponding to:
 
@@ -40,7 +43,7 @@ Each of them corresponding to:
 
 We are focusing on building the structure of the house (The website), which will be the HTML.
 
-Here is a quick peak into how HTML looks like:
+Here is a quick peak into what HTML looks like:
 
 ```html
 <!DOCTYPE html>
