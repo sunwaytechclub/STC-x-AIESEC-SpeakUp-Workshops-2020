@@ -123,7 +123,7 @@ Are you ready 💃? Grab a coffee if you want!
 5. Go to your file explorer / Finder and double click the file
     ![1](/html/assets/tags-5.1.jpg)
 
-  Ta daaaa
+    Ta daaaa
     ![2](/html/assets/tags-5.2.jpg)
 
 ### Concepts Behind <a name="tags-concept"></a>
@@ -154,6 +154,8 @@ browser: `<h1>`? Oh he means what comes after is the heading text! I should rend
 browser: *Render `This is a Heading` as heading text*
 
 browser: `</h1>`? Oh he means this is the end of the content, I should stop render the following stuffs as heading text.
+
+<br>
 
 Now, let's break this down further
 
@@ -208,3 +210,110 @@ And.... congrats! You had just completed one module!
 If you feel you need to take a short break☕, do so! But do remember to come back within 5 minutes!
 
 [Click here to navigate back to table of content](#table)
+
+<br>
+<br>
+
+If you are seeing this message, congrats, you had made this far!
+
+Let's continue our workshop! This will be what we are trying to achieve:
+
+![output](/html/assets/paired-result.jpg)
+
+For us to achieve, we will need to use 2 tags:
+
+- `<h1>` - Display heading text
+- `<img>` - Display image
+
+In order to display an image, we will need to use `<image>` tag, as specified from [w3schools](https://www.w3schools.com/tags/tag_img.asp), `<img>` required 2 attributes:
+
+- src - The path of the image (an url)
+- alt - Alternate text for the image, display this in case the image cannot be displayed
+
+Okay, we are facing something new here... what is an attribute?
+
+<br>
+<br>
+
+## Attributes
+
+In short, again, as what w3schools specified, [HTML attributes provide additional information about HTML elements.](https://www.w3schools.com/html/html_attributes.asp)
+
+In our case, we need to display an image, and the browser has no idea where should he find the image, so we have to explicitly tell the browser where the image is located at.
+
+The image of the result of this module is:
+
+![this](https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg)
+
+it is located at `https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg`, it is an url!
+
+So in order for us to tell the browser that, we need to display the image, we have to give the browser 2 informations:
+
+1. `<img>` tag to specify the content is an image
+2. `src` attribute of the `<img>` for the url of the image.
+
+The complete constructed HTML tag should be like this:
+
+```html
+<img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg" alt="cute puppy"/>
+```
+
+Try to copy the code and replace into your index.html, save and refresh your page.
+
+You might be wondering, why does `<img>` tag has no closing tag? Unlike `<h1><h1>`, `<p></p>`, they all have a `</ >` as closing tag!
+
+Well, that's because `<img>` tag is an unpaired tags, or, self-closing tag. It simply means that the tag does not need any element inside it, since `<img>` tag does not need to, and can not have any "child" tag in it (child tag as in a tag / content in a tag), so it makes sense to just skip it.
+
+Why can't we have the closing tag for the poor `<img>` tag too? That's unfair!
+
+- no u, because we programmer are lazy to type duplicated and redundant code!
+
+If you are still curious what is it, and why do we need it, here are some resources you can read further:
+
+[Further readings](https://www.techopedia.com/definition/31857/self-closing-tag)
+
+[List of self-closing tags](http://xahlee.info/js/html5_non-closing_tag.html)
+
+So, just think of attribute as the extra information that you can tell the browser on how to handle this HTML image.
+
+There are other attributes you can specify in the `<img>` too! Like:
+
+- `width` - The width of the image, measured in pixel
+- `height` - The height of the image, measured in pixel
+
+Example:
+
+```html
+<img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg" alt="cute puppy" width="100" height="100"/>
+```
+
+### Exercise🎽
+
+Let's recreate the structure we want at the beginning!
+
+#### General step break down
+
+1. Create a `<h1>` tag, and type `I am a cute puppy!` as the content
+2. Create a `<img/>` tag, make the `src` attribute of the tag be `https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg`, `alt` be `cute puppy`
+3. Save it and refresh the page
+4. Tadaaaa
+
+### Summary
+
+Attributes are the extra information you can give to the browser about this HTML tag.
+
+### Challenge
+
+`<a>` tag is a tag that defines a hyperlink, which is used to link from one page to another.
+
+Try to create an `<a>` tag after the `<img/>` tag, with the content text as `Click me to redirect to google`, and the url as `https://google.com`
+
+You can refer to [here](https://www.w3schools.com/tags/tag_a.asp) for how to use the `<a>` tag! 
+
+----
+And.... congrats! You had just completed another one module! I am pretty sure you can complete the rest of this workshop for a very short amount of time! Keep going and don't give up!
+
+[Click here to navigate back to table of content](#table)
+
+<br>
+<br>
