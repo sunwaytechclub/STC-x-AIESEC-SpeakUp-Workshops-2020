@@ -46,7 +46,7 @@ If you find any bugs / issues throughout the workshops, you may reach out to use
 
 Instead of writing it out, how about check out a video that we made to explain about this?
 
-[![intro to web dev video](/assets/intro.png)](https://youtu.be/1gzd1RQJiYE)
+[![intro to web dev video](/assets/intro.png)](https://youtu.be/4GdtgkWIqfA)
 
 <br>
 <br>
