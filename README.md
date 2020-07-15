@@ -10,6 +10,9 @@ Before we jump straight into the workshops, allow me to introduce ourself, do wa
 
 Without further ado, let's get started!
 
+<br>
+<br>
+
 ## Table of content
 
 1. [Getting started](#1)
@@ -43,7 +46,7 @@ If you find any bugs / issues throughout the workshops, you may reach out to use
 
 Instead of writing it out, how about check out a video that we made to explain about this?
 
-[![intro to web dev video](/assets/intro.png)](https://www.youtube.com/watch?v=aBNvCoJP-ag)
+[![intro to web dev video](/assets/intro.png)](https://youtu.be/1gzd1RQJiYE)
 
 <br>
 <br>
@@ -52,4 +55,4 @@ If everything goes well, you should have a rough understanding of what web devel
 
 [> Redirect to HTML Workshop](/html)
 
-[> Go to top](#)
+[> Go to top](/)
