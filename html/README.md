@@ -8,6 +8,7 @@
 
 1. [Getting started](#getting-started)
 2. [Tags](#tags)
+3. [Attributes](#attributes)
 
 <br>
 <br>
@@ -238,7 +239,7 @@ Okay, we are facing something new here... what is an attribute?
 <br>
 <br>
 
-## Attributes
+## Attributes <a name="attributes"></a>
 
 In short, again, as what w3schools specified, [HTML attributes provide additional information about HTML elements.](https://www.w3schools.com/html/html_attributes.asp)
 
