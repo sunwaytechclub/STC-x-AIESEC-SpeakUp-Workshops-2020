@@ -1,6 +1,8 @@
 # HTML Workshop 🏚
 > The backbone of a website
 
+Estimated completion time: 1.5 - 2 hours
+
 <br>
 <br>
 
