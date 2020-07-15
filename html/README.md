@@ -11,6 +11,7 @@ Estimated completion time: 1.5 - 2 hours
 1. [Getting started](#getting-started)
 2. [Tags](#tags)
 3. [Attributes](#attributes)
+4. [Category for HTML tags](#category)
 
 <br>
 <br>
@@ -323,3 +324,23 @@ And.... congrats! You had just completed another one module! I am pretty sure yo
 
 <br>
 <br>
+
+### Category for HTML tags <a name="category"></a>
+
+Now we had explored the basic usage and concept behind the html tag, let me introduce you some of the categories we have for all kind of HTML tags!
+
+*Please take note that this is my own opinion for the category, although w3schools [had made up the category](https://www.w3schools.com/tags/ref_byfunc.asp) as well, but I will prefer to categorize them in a higher level.
+
+I think it's better to show an illustration rather than just a compiled list, hence I created a 3D web graph data illustration for this purposes!
+
+![1](/html/assets/category-1.jpg)
+
+- Left click to rotate the camera
+- Right click to pan around
+- Scroll to zoom in
+
+Check out [here](https://html3d.netlify.app)!
+
+Wondering how I made it?
+That's something you can explore in the future after you had learned Javascript!
+
