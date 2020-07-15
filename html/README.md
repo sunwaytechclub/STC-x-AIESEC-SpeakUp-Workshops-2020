@@ -9,4 +9,4 @@ To build a house, we need:
 
 - A brick!
 
-![brick](/assets/brick.jpg)
+![brick](/html/assets/brick.jpg)
