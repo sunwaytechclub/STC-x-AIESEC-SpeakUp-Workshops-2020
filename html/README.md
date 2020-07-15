@@ -107,6 +107,7 @@ Are you ready 💃? Grab a coffee if you want!
     2.3 Navigate to the `index.html` file you had just created and click `open`
 
     2.4 You should now see it open the empty `index.html` file
+
       ![3](/html/assets/tags-2.3.jpg)
 
 3. Type `<h1> I am a heading! </h1>`
@@ -121,6 +122,7 @@ Are you ready 💃? Grab a coffee if you want!
 
 5. Go to your file explorer / Finder and double click the file
     ![1](/html/assets/tags-5.1.jpg)
+
   Ta daaaa
     ![2](/html/assets/tags-5.2.jpg)
 
