@@ -21,6 +21,7 @@ Without further ado, let's get started!
 4. [CSS Workshop](/css)
 5. [JS Workshpo](/js)
 6. [Let's make a simple to-do app!](/project)
+7. [What's Next?](/RESOURCES.md)
 
 <br>
 <br>
