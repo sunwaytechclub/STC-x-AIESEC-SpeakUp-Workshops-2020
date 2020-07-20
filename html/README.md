@@ -404,8 +404,8 @@ Complete code:
 ```html
 <html>
   <head>
-
-  <!-- We will skip this for now -->
+    <title>I will be shown on the tab of the browser</title>
+    <!-- We will skip this for now -->
 
   </head>
 
@@ -437,3 +437,51 @@ Now, we had learned enough theories and it started to get more boring!
 
 Why not we try to practice what we had learned just now by making out a simple web page like this:
 
+![output](/html/assets/output.jpg)
+
+Sounds good? Here is a detail breakdown of the document object model
+
+![prac-2](/html/assets/prac-2.png)
+
+[Here is the complete code](/html/projects/index.html)
+
+Now my challenge is... try to first adjust few of the values and make it fits you, and even try to add a few more things like:
+
+- `<table>` - A table
+- `<ul>` - An unordered list
+- `<ol>` - An ordered list
+- `<video>` - To play video
+- `<img>` - To display image
+- `<a>` - An anchor that act as a hyperlink
+- `<hr>` - Draw an horizontal line
+- `<h1> to <h6>` - Headings
+- `<p>` - Paragraph
+
+----
+😎 You had reached the end of the workshop! Congrats again for completing so far!
+
+## Conclusion
+
+There are definitely a lot of tags that I had never covered, like `<canvas>`, `<svg>` that allows you to draw stuff on the website.
+
+But this is just the beginning of your whole journey! Don't worry if you felt overwhelmed after this workshop, just keep practice and search it online either from Google or [w3schools](https://www.w3schools.com/)
+
+To summarize what we had learned in this workshop:
+
+- Web development is just like building a house, you need a structure (HTML), painting (CSS), and all the switches and lights (JS)
+
+- HTML tag is like double quote in english, it defines where this content start, where this content end. And the browser will render it based on what kind of tag you specified
+
+- Attributes allow you to specify more data to the tag, so that the browser will have more information about how to handle it.
+
+- There are generally 5 types of tags you can have:
+
+  1. Base - All the generic tags (body, head, script, etc...)
+  2. Layout - The html tags that let you structure your website (div, table, main, footer, etc...)
+  3. Typography - The html tags that let you have different behaviours of your text (h1, p, del, etc...)
+  4. Form & Input - The html tags that let you fill up the form, accepting user input.
+  5. Graphic - The html tags that let you display graphics assets (image, video, svg, or even WebGL).
+
+- Document Object Model is just like your family tree, who is the parent that has this child
+
+That's it! Hope to see you in the next workshop again!
