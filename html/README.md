@@ -14,6 +14,7 @@ Estimated completion time: 1.5 - 2 hours
 4. [Category for HTML tags](#category)
 5. [Document object model](#dom)
 6. [Project](#project)
+7. [Conclusion](#conclusion)
 
 <br>
 <br>
@@ -460,7 +461,7 @@ Now my challenge is... try to first adjust few of the values and make it fits yo
 ----
 😎 You had reached the end of the workshop! Congrats again for completing so far!
 
-## Conclusion
+## Conclusion <a name="conclusion"></a>
 
 There are definitely a lot of tags that I had never covered, like `<canvas>`, `<svg>` that allows you to draw stuff on the website.
 
