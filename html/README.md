@@ -12,6 +12,8 @@ Estimated completion time: 1.5 - 2 hours
 2. [Tags](#tags)
 3. [Attributes](#attributes)
 4. [Category for HTML tags](#category)
+5. [Document object model](#dom)
+6. [Project](#project)
 
 <br>
 <br>
@@ -315,7 +317,7 @@ Attributes are the extra information you can give to the browser about this HTML
 
 Try to create an `<a>` tag after the `<img/>` tag, with the content text as `Click me to redirect to google`, and the url as `https://google.com`
 
-You can refer to [here](https://www.w3schools.com/tags/tag_a.asp) for how to use the `<a>` tag! 
+You can refer to [here](https://www.w3schools.com/tags/tag_a.asp) for how to use the `<a>` tag!
 
 ----
 And.... congrats! You had just completed another one module! I am pretty sure you can complete the rest of this workshop for a very short amount of time! Keep going and don't give up!
@@ -331,7 +333,7 @@ Now we had explored the basic usage and concept behind the html tag, let me intr
 
 *Please take note that this is my own opinion for the category, although w3schools [had made up the category](https://www.w3schools.com/tags/ref_byfunc.asp) as well, but I will prefer to categorize them in a higher level.
 
-I think it's better to show an illustration rather than just a compiled list, hence I created a 3D web graph data illustration for this purposes!
+I think it's better to show an illustration rather than just a compiled list, hence I created a 3D web graph data illustration for this purpose!
 
 ![1](/html/assets/category-1.jpg)
 
@@ -351,4 +353,87 @@ I categorize all the html tags into 5 main categories:
 3. Typography - The html tags that let you have different behaviours of your text (h1, p, del, etc...)
 4. Form & Input - The html tags that let you fill up the form, accepting user input.
 5. Graphic - The html tags that let you display graphics assets (image, video, svg, or even WebGL).
+
+Do check it out to have a bigger picture of what HTML has!
+
+[Click here to navigate back to table of content](#table)
+
+<br>
+<br>
+
+### Document Object Model <a name="dom"></a>
+
+Taking a simple tag `<div>` - Division tag that define a section of HTML.
+
+A `<div>` is usually being used as a container to tags, to "group" them together.
+
+So essentially, we can group a bunch of `<p>` tags together by using a `<div>` tag like this:
+
+```html
+<div>
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p>Paragraph 3</p>
+</div>
+```
+
+To illustrate it out, it looks like this:
+
+![dom-1](/html/assets/dom-1.png)
+
+We usually call this structure a **tree** structure.
+
+So what is a document object model? Well, essentially it's just a **tree** structure that consist of everything you had wrote.
+
+A typical web page tree structure looks like this:
+
+![dom-2.png](/html/assets/dom-2.png)
+
+- `<html>` - Your root "object"
+- `<head>` - This tag will have all the "description" about your web page, it won't be shown in your browser, it is used by browser to understand more about this web page
+- `<body>` - Everything inside this tag will be rendered on the browser, which is what the user is going to see.
+
+Thou in HTML5 you can write directly a `<p>` tag without putting it into `<body>` tag, because the browser is smart enough to help you automatically generate one, but it is definitely not a good practice. You may face unexpected behaviour in the future.
+
+So if we have a model of what we had wrote just now, a `<div>` tag that contains 3 `<p>` tags, the Document Object Model will look like this:
+
+![dom-3.png](/html/assets/dom-3.png)
+
+Complete code:
+
+```html
+<html>
+  <head>
+
+  <!-- We will skip this for now -->
+
+  </head>
+
+  <body>
+    <div>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+    </div>
+  </body>
+
+</html>
+```
+
+Hey! Did you see a weird tag? The `<!-- We will skip this for now -->`!
+
+That is called **Comment**, it will not be rendered to the browser as it will be ignored, so it is best for people who would like to comment and document down what they had wrote!
+
+The Comment Tag: `<!-- -->`
+
+Learning about how to properly construct your document object model is very important when we start dealing with Cascading Stylesheet (CSS) and JavaScript (JS), so do ask questions if you are still not yet understand!
+
+<br>
+<br>
+
+### Project <a name="project"></a>
+
+Now, we had learned enough theories and it started to get more boring!
+
+Why not we try to practice what we had learned just now by making out a simple web page like this:
 
