@@ -48,4 +48,4 @@ If you had fogotten how to write html, don't worry 😎, you can always refer ba
 
 Now the probably not everyone loves a Serif font, how about we change it to another font family?
 
-Remember the [Attributes](/html#attribuets)
+Remember the [Attributes](/html#attributes)
