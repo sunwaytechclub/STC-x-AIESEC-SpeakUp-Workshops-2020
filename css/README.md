@@ -523,6 +523,12 @@ So essentially think of all of your html element as houses.
 
 Let's start and adjusting these properties to see the changes!
 
+Document Object Model:
+
+![project-1.jpg](/css/assets/project-1.jpg)
+
+Complete code:
+
 ```html
 <html>
   <head>
