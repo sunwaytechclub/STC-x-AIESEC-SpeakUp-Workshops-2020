@@ -367,3 +367,148 @@ Output:
 4. We then change the `friendAccept` into `false`, we refresh the page again and in this case it output `5`, because `friendAccept` is **not equal** to `true`.
 
 I do strongly suggest you to head on [w3schools exercises](https://www.w3schools.com/js/js_if_else.asp) to practice a few times on how to use this `if-else` statement, as it's one of the building blocks for all kind of programs.
+
+<br>
+<br>
+
+## Collection of data <a name="collection"></a>
+
+A collection of data is basically, well, a collection of data 🤣
+
+We have a fancy term for it thou, it's called `data structure`, how the **structure** of the group of data you have looks like.
+
+It is used to group data together in certain ways, so that we can access it easily in future.
+
+```javascript
+let NickFriends = ["Rain Chai", "Frankey", "Marcus"];
+```
+
+In the example above, we have a variable called `NickFriends` that is used to store all his friends' name.
+
+There are few types of data structures:
+
+- Array, `let NickFriends = ["Rain Chai","Frankey","Marcus"];`, it's just like list, essentailly storing the data in a sequential way, we can access them using number, like if I want "the first item in the list", we can access it like `NickFriends[0]`, the `[0]` here stands for **First item in the array**
+
+  In computer science, everything started from 0, not 1.
+
+- Object:
+
+```javascript
+let Nick = {
+  firstName: "Nick Hong",
+  lastName: "Ding",
+  age: 21,
+  eyeColor: "dark brown",
+};
+```
+
+This itself worth to be a topic, which I will be covering it later on.
+
+So... what can we do with data structure? well, data structure itself can't do anything, recall what we had always stated earlier?
+
+> Programming is all about how you process the data.
+
+Grouping data together allowed to process data in a more easier way.
+
+## Loop <a name="loop"></a>
+
+Let's take a scenario:
+
+```text
+Nick has 5 apples, he wanted to give it to all his friends,
+but his friend can choose to accept it or not, if he accepted,
+then Nick's apples amount will decrease 1,
+else, Nick's apples amount remain the same.
+```
+
+It's almost the same from the `if-else` example, but we added a "For all of his friends" statement.
+
+1. Let's setup the first logic, **create** a variable called `apples` and set it to 5.
+
+   ```javascript
+   let apples = 5;
+   ```
+
+2. Create a list of Nick's friends
+
+   ```javascript
+   let NickFriends = ["Rain Chai", "Frankey", "Marcus"];
+   ```
+
+   We will be using String to indicate it for now, later on we might want to use `object` instead.
+
+3. Complete code
+
+   ```javascript
+   let apples = 5;
+   let NickFriends = ["Rain Chai", "Frankey", "Marcus"];
+   let friendAccept = true;
+   ```
+
+Now we had done the setup, is time for us to think out the solution! We can have these few ways to solve "For each of his friends, give 1 apple":
+
+1. Manually type it out
+
+   ```javascript
+   // if friend accepted and NickFriends[0] does exists
+   if (friendAccept == true && NickFriends[0]) {
+     apples--;
+   }
+   if (friendAccept == true && NickFriends[1]) {
+     apples--;
+   }
+   if (friendAccept == true && NickFriends[2]) {
+     apples--;
+   }
+   ```
+
+This approach seems doable, and it will have the expected behavior.
+
+But what if Nick has like 100 friends? We will have to copy paste them out one by one everytime.
+
+In this case, it's better to tell the JavaScript that "Hey this is a list, can you help me to loop through them with this logic?"
+
+### For loop
+
+In that example, using a for loop is a perfect case:
+
+```javascript
+for (let index = 0; index < NickFriends.length; index++) {
+  if (friendAccept) {
+    apples--;
+  }
+}
+```
+
+Using the code above, we are able to scale the list infinitely, either it be 100 or even 1000, the logic **for each** item in the list will be the same.
+
+#### For loop Breakdown
+
+- syntax of a for loop
+
+  ```javascript
+  for (\<Counter variable name\>; \<Conditional statement\>; \<counter manipulation\>){
+    \<logic\>
+  }
+  ```
+
+  In the browser execution:
+
+  1. The browser sees a `for` keyword, hence he knows it's a for loop
+  2. The browser first assign a variable as the counter at the start of the loop, you named it, in our case, it's `index`
+  3. The browser check if the **Conditional statement** return `true`, in our case, we check if `index is smaller than the length of the nick friends list`
+
+     - `<` means smaller
+     - `>` means larger
+     - `<=` means smaller or equal
+     - `>=` means larger or equal
+
+  4. If the **Conditional statement** is `true`, the browser execute the **logic**
+
+     if it is `false`, the browser simply stop looping anymore.
+
+  5. After executing the logic, the browser will execute the last part of the for loop, the browser will manipulate the counter variable ( the `index` ), be it increment or decrement. You can specify whatever execution you want to do/
+
+  In a nut shell:
+
+  if **Conditional statement** is `true`, execute the logic, else stop looping. If it is `true`, then execute the counter manipulation.
