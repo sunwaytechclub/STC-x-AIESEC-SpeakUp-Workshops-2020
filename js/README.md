@@ -86,7 +86,9 @@ But do you need to be super good at math to learn programming? Nope.
 Let's take an example:
 
 ```text
-Nick just bought 5 apples, he gave 1 to his friend. Few days later, he realized all his apples were rotten, so he threw it away. When his friend ask how many apples he left, Nick answered 0.
+Nick just bought 5 apples, he gave 1 to his friend.
+Few days later, he realized all his apples were rotten, so he threw it away.
+When his friend ask how many apples he left, Nick answered 0.
 ```
 
 Pretty straightforward, from the example above we can see all the 4 types of operation (CRUD):
@@ -294,7 +296,10 @@ Do feel free to play around with other operators! [Here is a list of operators](
 Say we set up a scenario:
 
 ```text
-Nick has 5 apples, he wanted to give one of them to his friend, but his friend can choose to accept it or not, if he accepted, then Nick's apples amount will decrease 1, else, Nick's apples amount remain the same.
+Nick has 5 apples, he wanted to give one of them to his friend,
+but his friend can choose to accept it or not, if he accepted,
+then Nick's apples amount will decrease 1,
+else, Nick's apples amount remain the same.
 ```
 
 We can implement the above logic by using another keywords: `if-else`
