@@ -1,4 +1,5 @@
 # JS Workshop ⚙
+
 > Make your painting interactable
 
 Estimated completion time: 1.5 - 2 hours
@@ -10,7 +11,12 @@ Estimated completion time: 1.5 - 2 hours
 
 1. [JavaScript as a programming language](#intro)
 2. [JavaScript in browser](#browser)
-3. [Document object model manipulation](#dom)
-4. [A short walkthrough for programming](#programming)
-5. [Project](#project)
-6. [Conclusion](#conclusion)
+3. [A short walkthrough for programming](#programming)
+4. [Data types](#datatypes)
+5. [Conditional statement](#conditional)
+6. [Collection of data](#collection)
+7. [Loop](#loop)
+8. [Function](#function)
+9. [Intro to object](#object)
+10. [Project](#project)
+11. [Conclusion](#conclusion)
