@@ -408,7 +408,7 @@ So... what can we do with data structure? well, data structure itself can't do a
 
 > Programming is all about how you process the data.
 
-Grouping data together allowed to process data in a more easier way.
+Grouping data together allow us to process data in a more easier way.
 
 ## Loop <a name="loop"></a>
 
@@ -416,7 +416,7 @@ Let's take a scenario:
 
 ```text
 Nick has 5 apples, he wanted to give it to all his friends,
-but his friend can choose to accept it or not, if he accepted,
+but his friends can choose to accept it or not, if he accepted,
 then Nick's apples amount will decrease 1,
 else, Nick's apples amount remain the same.
 ```
@@ -462,11 +462,13 @@ Now we had done the setup, is time for us to think out the solution! We can have
    }
    ```
 
-This approach seems doable, and it will have the expected behavior.
+   This approach seems doable, and it will have the expected behavior.
 
-But what if Nick has like 100 friends? We will have to copy paste them out one by one everytime.
+   But what if Nick has like 100 friends? We will have to copy paste them out one by one everytime.
 
-In this case, it's better to tell the JavaScript that "Hey this is a list, can you help me to loop through them with this logic?"
+   In this case, it's better to tell the JavaScript that "Hey this is a list, can you help me to loop through them with this logic?"
+
+2. Smarter, use a for loop
 
 ### For loop
 
