@@ -85,7 +85,9 @@ But do you need to be super good at math to learn programming? Nope.
 
 Let's take an example:
 
+```text
 Nick just bought 5 apples, he gave 1 to his friend. Few days later, he realized all his apples were rotten, so he threw it away. When his friend ask how many apples he left, Nick answered 0.
+```
 
 Pretty straightforward, from the example above we can see all the 4 types of operation (CRUD):
 
@@ -288,3 +290,75 @@ Do feel free to play around with other operators! [Here is a list of operators](
 <br>
 
 ## Conditional statement <a name="conditional"></a>
+
+Say we set up a scenario:
+
+```text
+Nick has 5 apples, he wanted to give one of them to his friend, but his friend can choose to accept it or not, if he accepted, then Nick's apples amount will decrease 1, else, Nick's apples amount remain the same.
+```
+
+We can implement the above logic by using another keywords: `if-else`
+
+```javascript
+let apples = 5;
+let friendAccept = true;
+
+if (friendAccept == true) {
+  apples--;
+} else {
+  // do nothing
+}
+console.log(apples);
+```
+
+Output:
+
+`4`
+
+Now let's try to let the friend refuse to accept the apple:
+
+```javascript
+let apples = 5;
+let friendAccept = false;
+
+if (friendAccept == true) {
+  apples--;
+} else {
+  // do nothing
+}
+console.log(apples);
+```
+
+Output:
+
+`5`
+
+### Breakdown
+
+1. We have a variable called `friendAccept`, which is a boolean variable ( can only stored true or false).
+
+   `if` statement's syntax is as follow
+
+   `if(<condition>) { <operation> }`
+
+   if whatever inside the bracket, the (\<condition\>) is true, then execute whatever operation is in the curly braces.
+
+2. We then write out a `if` statement that, if `friendAccept` is equal to `true`, then execute the operation.
+
+   the `==` is a logical operator, different with `=`, `==` stands for **equal**, `=` is assignment.
+
+   There are a few other logical operators, like:
+
+   - `!=` is **not equal**: `apples != 1` will return true, because apples is **not equal** to 1, but is equal to 5
+   - `&&` is **and**: `apples == 5 && friendAccept` this is saying "if apples is equal to 5 and friendAccept is true, then return true"
+   - `||` is **or**: `apples == 5 || friendAccept` this is saying "if apples is equal to 5 or friendAccept is equal to true, then return true"
+
+   you may check it out [here](https://www.w3schools.com/js/js_comparisons.asp) for more kinds of operators
+
+   If you don't understand the use cases yet, don't be worried, we will be using those a lot in the future and you will get yourself be more familiar with it.
+
+3. The `friendAccept` is `true`, hence the if block is executed, it output `4`
+
+4. We then change the `friendAccept` into `false`, we refresh the page again and in this case it output `5`, because `friendAccept` is **not equal** to `true`.
+
+I do strongly suggest you to head on [w3schools exercises](https://www.w3schools.com/js/js_if_else.asp) to practice a few times on how to use this `if-else` statement, as it's one of the building blocks for all kind of programs.
