@@ -19,9 +19,10 @@ Without further ado, let's get started!
 2. [Introduction to web development](#2)
 3. [HTML Workshop](/html)
 4. [CSS Workshop](/css)
-5. [JS Workshpo](/js)
-6. [Let's make a simple to-do app!](/project)
-7. [What's Next?](/RESOURCES.md)
+5. [JS Workshop](/js)
+6. [DOM Workshop](/dom)
+7. [Let's make a simple to-do app!](/project)
+8. [What's Next?](/RESOURCES.md)
 
 <br>
 <br>

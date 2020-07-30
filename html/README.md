@@ -1,4 +1,5 @@
 # HTML Workshop 🏚
+
 > The backbone of a website
 
 Estimated completion time: 1.5 - 2 hours
@@ -59,10 +60,8 @@ Here is a quick peak into what HTML looks like:
     <title>Page Title</title>
   </head>
   <body>
-
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
-
   </body>
 </html>
 ```
@@ -97,44 +96,44 @@ Are you ready 💃? Grab a coffee if you want!
 
 1. Create a file called `index.html` in your desktop (or any place!)
 
-    1.1 Create a txt file
-      ![1](/html/assets/tags-1.0.PNG)
+   1.1 Create a txt file
+   ![1](/html/assets/tags-1.0.PNG)
 
-    1.2 Name it to `index.html`
-      ![2](/html/assets/tags-1.1.PNG)
+   1.2 Name it to `index.html`
+   ![2](/html/assets/tags-1.1.PNG)
 
-    1.3 You should see the icon of it became your favourite browser icon
-      ![3](/html/assets/tags-1.2.PNG)
+   1.3 You should see the icon of it became your favourite browser icon
+   ![3](/html/assets/tags-1.2.PNG)
 
 2. Open your Visual Studio Code and open the html file.
 
-    2.1 Open your Visual Studio Code
-      ![1](/html/assets/tags-2.1.jpg)
+   2.1 Open your Visual Studio Code
+   ![1](/html/assets/tags-2.1.jpg)
 
-    2.2 Click on `file` and choose `Open File...`
-      ![2](/html/assets/tags-2.2.jpg)
+   2.2 Click on `file` and choose `Open File...`
+   ![2](/html/assets/tags-2.2.jpg)
 
-    2.3 Navigate to the `index.html` file you had just created and click `open`
+   2.3 Navigate to the `index.html` file you had just created and click `open`
 
-    2.4 You should now see it open the empty `index.html` file
+   2.4 You should now see it open the empty `index.html` file
 
-      ![3](/html/assets/tags-2.3.jpg)
+   ![3](/html/assets/tags-2.3.jpg)
 
 3. Type `<h1> I am a heading! </h1>`
 
-    ![1](/html/assets/tags-3.1.jpg)
+   ![1](/html/assets/tags-3.1.jpg)
 
 4. Save it
 
-    4.1 Press `ctrl` + `s` to save, or go to `File` > `Save`
+   4.1 Press `ctrl` + `s` to save, or go to `File` > `Save`
 
-    *Hint: If you see a white dot beside the file name on the tab, it means it is not saved.
+   \*Hint: If you see a white dot beside the file name on the tab, it means it is not saved.
 
 5. Go to your file explorer / Finder and double click the file
-    ![1](/html/assets/tags-5.1.jpg)
+   ![1](/html/assets/tags-5.1.jpg)
 
-    Ta daaaa
-    ![2](/html/assets/tags-5.2.jpg)
+   Ta daaaa
+   ![2](/html/assets/tags-5.2.jpg)
 
 ### Concepts Behind <a name="tags-concept"></a>
 
@@ -147,10 +146,8 @@ Let's recall the example code we had before:
     <title>Page Title</title>
   </head>
   <body>
-
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
-
   </body>
 </html>
 ```
@@ -161,7 +158,7 @@ Now, we have all these `<>` stuffs there, the primarily reason why we have it is
 
 browser: `<h1>`? Oh he means what comes after is the heading text! I should render it as a heading text!
 
-browser: *Render `This is a Heading` as heading text*
+browser: _Render `This is a Heading` as heading text_
 
 browser: `</h1>`? Oh he means this is the end of the content, I should stop render the following stuffs as heading text.
 
@@ -200,17 +197,16 @@ Try to copy this code, replace with what you have in your `index.html` with Visu
     <title>Page Title</title>
   </head>
   <body>
-
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
-
   </body>
 </html>
 ```
 
 Remember, you can always ask us at [Facebook](https://www.facebook.com/sunwaytechclub) or even open an issue [here](https://github.com/sunwaytechclub/STC-x-AIESEC-SpeakUp-Workshops-2020/issues), I will respond to you as fast as possible!
 
-----
+---
+
 And.... congrats! You had just completed one module!
 
 > “The first step is the most important. It is the most crucial and the most effective as it will initiate the direction you have chosen.”
@@ -265,7 +261,10 @@ So in order for us to tell the browser that, we need to display the image, we ha
 The complete constructed HTML tag should be like this:
 
 ```html
-<img src="https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs" alt="cute puppy"/>
+<img
+  src="https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs"
+  alt="cute puppy"
+/>
 ```
 
 Try to copy the code and replace into your index.html, save and refresh your page.
@@ -294,7 +293,12 @@ There are other attributes you can specify in the `<img>` too! Like:
 Example:
 
 ```html
-<img src="https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs" alt="cute puppy" width="100" height="100"/>
+<img
+  src="https://lh3.googleusercontent.com/proxy/LD8IHPGdcJpuV6ajT_oV0SqVfUas_5ydVlPAIoIMwmxgwMuPvlo9R-9-MGI-XI1DCJmuywwY7bxFivsl16s-EhhGbdGOEdextzNva0JUVmiWIqkD-Jgiip7Ar4bGNvldTw2c8pDCYXs"
+  alt="cute puppy"
+  width="100"
+  height="100"
+/>
 ```
 
 ### Exercise🎽
@@ -320,7 +324,8 @@ Try to create an `<a>` tag after the `<img/>` tag, with the content text as `Cli
 
 You can refer to [here](https://www.w3schools.com/tags/tag_a.asp) for how to use the `<a>` tag!
 
-----
+---
+
 And.... congrats! You had just completed another one module! I am pretty sure you can complete the rest of this workshop for a very short amount of time! Keep going and don't give up!
 
 [Click here to navigate back to table of content](#table)
@@ -332,7 +337,7 @@ And.... congrats! You had just completed another one module! I am pretty sure yo
 
 Now we had explored the basic usage and concept behind the html tag, let me introduce you some of the categories we have for all kind of HTML tags!
 
-*Please take note that this is my own opinion for the category, although w3schools [had made up the category](https://www.w3schools.com/tags/ref_byfunc.asp) as well, but I will prefer to categorize them in a higher level.
+\*Please take note that this is my own opinion for the category, although w3schools [had made up the category](https://www.w3schools.com/tags/ref_byfunc.asp) as well, but I will prefer to categorize them in a higher level.
 
 I think it's better to show an illustration rather than just a compiled list, hence I created a 3D web graph data illustration for this purpose!
 
@@ -407,7 +412,6 @@ Complete code:
   <head>
     <title>I will be shown on the tab of the browser</title>
     <!-- We will skip this for now -->
-
   </head>
 
   <body>
@@ -417,7 +421,6 @@ Complete code:
       <p>Paragraph 3</p>
     </div>
   </body>
-
 </html>
 ```
 
@@ -458,7 +461,8 @@ Now my challenge is... try to first adjust few of the values and make it fits yo
 - `<h1> to <h6>` - Headings
 - `<p>` - Paragraph
 
-----
+---
+
 😎 You had reached the end of the workshop! Congrats again for completing so far!
 
 ## Conclusion <a name="conclusion"></a>
@@ -486,3 +490,7 @@ To summarize what we had learned in this workshop:
 - Document Object Model is just like your family tree, who is the parent that has this child
 
 That's it! Hope to see you in the next workshop again!
+
+[> Redirect to CSS Workshop](/css)
+
+[> Go to top](/html)

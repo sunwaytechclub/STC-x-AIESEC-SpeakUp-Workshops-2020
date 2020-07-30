@@ -614,3 +614,7 @@ That's how I personally learned too 👀, to be a developer, learning how to cur
 But with that being said, do ask any question to us if you have any!
 
 If not, see you on the next workshop!
+
+[> Redirect to js Workshop](/js)
+
+[> Go to top](/css)
