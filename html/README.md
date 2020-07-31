@@ -4,6 +4,8 @@
 
 Estimated completion time: 1.5 - 2 hours
 
+[Slides](https://slides.com/sunwaytechclub/aiesec-ttt-html)
+
 <br>
 <br>
 
