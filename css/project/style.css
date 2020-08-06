@@ -39,14 +39,18 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.wrapper {
+#wrapper {
   width: 600px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
   margin: auto;
+
   background-color: #ebecf1;
+
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.13);

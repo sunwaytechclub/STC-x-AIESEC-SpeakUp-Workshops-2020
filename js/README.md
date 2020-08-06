@@ -514,3 +514,207 @@ Using the code above, we are able to scale the list infinitely, either it be 100
   In a nut shell:
 
   if **Conditional statement** is `true`, execute the logic, else stop looping. If it is `true`, then execute the counter manipulation.
+
+### While loop
+
+While loop is different with a for loop, it can be endless:
+
+```javascript
+let isFriendAccept = true;
+while(isFriendAccept){
+  apples -= 1;
+}
+```
+
+In the above example, the amount of apples will keep decreasing forever!
+
+If we want to stop it:
+
+```javascript
+let isFriendAccept = true;
+while(isFriendAccept){
+  apples -=1 ;
+  if(apples <= 0){
+    isFriendAccept = false;
+  }
+}
+```
+
+By doing so, if the amount of apples is less or equal to 0, isFriendAccept will become `false`.
+
+<br>
+<br>
+
+## Function <a name="function"></a>
+
+Function is very simple, given 1 input, give out 1 output,
+
+In all the examples above, we keep writing out `apples -= 1`, this operation is saying "decrease apple's amount by 1", we can write out a function to replace the operation:
+
+Let's try to declare a function.
+
+```javascript
+let apples = 5;
+
+function minusOne(x){
+  let output = x - 1;
+  return output;
+}
+
+console.log(minusOne(apples)); // -> output: 4
+```
+
+Something to note here:
+
+return: the keyword for "output this data"
+
+We can have more fancy stuff in function, say if I want to `console.log` everytime when the apple amount decreased, we can do so:
+
+```javascript
+let apples = 5;
+
+function minusOne(x){
+  console.log("Apples decrease by 1!");
+  let output = x - 1;
+  return output;
+}
+```
+
+Doing so, we can inject additional logic in the function.
+
+Let's try to use what we had learned earlier: while loop together
+
+```javascript
+
+let apples = 5;
+
+while (apples >= 0){
+  apples = minusOne(apples);
+}
+
+function minusOne(x){
+  console.log("Apples decrease by 1!");
+  let output = x - 1;
+  return output;
+}
+```
+
+In the example above, the output of `minusOne` will get assign to apples again.
+
+1. when apples = 5
+
+    while loop condition is `true` (5 is more or equal to 0), hence, execute the logic.
+
+    pass in the variable apples (which is 5) to `minusOne` function, the `minusOne` function will process the data, and output another data (which is simply, minus 1)
+
+    We store the output data of `minusOne` back to `apples` again. 
+
+    Now, apples = 4
+
+    Continue to check if while loop is true
+
+2. when apples = 4
+
+    while loop condition is `true` (4 is more or equal to 0), hence, execute the logic.
+
+    pass in the variable apples (which is 4) to `minusOne` function, the `minusOne` function will process the data, and output another data (which is simply, minus 1)
+
+    We store the output data of `minusOne` back to `apples` again.
+
+    Continue to check if while loop is true
+
+3. ...
+
+4. when apples = -1
+
+    while loop no longer `true` (-1 is not more or equal to 0)
+
+    Loop finish, function no longer get called.
+
+<br>
+<br>
+
+## Intro to object <a name="object"></a>
+
+Object example:
+
+```javascript
+let Nick = {
+  name: "Ding Nick Hong",
+  friends: ["Rain","Frankey"],
+  apples: 5
+}
+
+console.log(Nick.friends); // -> output: ["Rain","Frankey"]
+```
+
+Object is simple a collection of data to hold a certain structure.
+
+An illustration:
+
+![object-1](/js/assets/object-1.png)
+
+You can think of object as what I had always shown you, the **Document Object Model**, basically a tree-like data structure.
+
+For you to access the object attributes ( Nick's attributes ), you can use a `.` to specify:
+
+`Nick.name`
+
+`Nick.friends`
+
+`Nick.apples`
+
+<br>
+<br>
+
+## Project <a name="project"></a>
+
+### Challenge 1
+
+Source: [Hackerrank](https://www.hackerrank.com/challenges/solve-me-first/problem)
+
+Complete the function solveMeFirst to compute the sum of two integers.
+
+Function prototype:
+
+```javascript
+solveMeFirst(number1, number2);
+```
+
+where,
+
+```text
+number1 is the first number input.
+number2 is the second number input
+```
+
+Sample Input:
+
+number1 = 2
+
+number2 = 3
+
+Sample Output:
+
+5
+
+Explanation
+
+The sum of the two integers number1 and number2  is computed as: 2 + 3 = 5.
+
+### Challenge 2
+
+Source: [https://www.hackerrank.com/challenges/staircase/problem](https://www.hackerrank.com/challenges/staircase/problem)
+
+<br>
+<br>
+
+## Conclusion <a name="conclusion"></a>
+
+You had completed a simple JavaScript walkthrough, there are tons of stuff that I didn't include.
+
+[https://www.freecodecamp.org/](https://www.freecodecamp.org/) offers a great hands-on and practice for you to learn more.
+
+[> Redirect to DOM Workshop](/dom)
+
+[> Go to top](/js)
