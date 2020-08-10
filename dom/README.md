@@ -136,7 +136,7 @@ document.querySelector("h1.coolH1")
 
 They are all similar to our **CSS Selectors**, so if you are not familiar with CSS Selectors, do take a read!
 
-In this workshop however, we will only be using `querySelector` for convenient's sake, in the real life application, you might want to choose appropiate function, like the performance of using `getElementById` can be twice as fast as `querySelector` [https://gomakethings.com/javascript-selector-performance/] (https://gomakethings.com/javascript-selector-performance/)
+In this workshop however, we will only be using `querySelector` for convenient's sake, in the real life application, you might want to choose appropiate function, like the performance of using `getElementById` can be twice as fast as `querySelector` [https://gomakethings.com/javascript-selector-performance/](https://gomakethings.com/javascript-selector-performance/)
 
 <br>
 <br>
