@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Wrapper of the body -->
+    <div class="content">
+
+        <!-- Status: date and tasks  -->
+        <div class="status">
+            <h1 class="status__date">Saturday, 1/7/2020</h1>
+            <p class="status__active_task">2 active tasks</p>
+        </div>
+
+        <!-- Task input -->
+        <div class="task_input">
+            <input type="text" name="task" class="task_input__input" placeholder="Enter a task...">
+            <button onclick="createTask();" class="task_input__submit">Add Task</button>
+        </div>
+
+        <hr class="line">
+
+        <!-- Tasks -->
+        <div class="tasks">
+            <div class="task">
+                <div class="task__left">
+                    <img src="/images/circle_hollow.svg" alt="uncheck" class="task__left__image">
+                    <p class="task__left__desc">I am task 1</p>
+                </div>
+                <img src="/images/delete.svg" alt="delete">
+            </div>
+            <hr class="line">
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

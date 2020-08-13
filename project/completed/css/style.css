@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --primary-color:#FFB6B9;
+    --secondary-color: #BDBDBD;
+    --base: #222831;
+    --base-darken: #14181d;
+    --base-lighten: #393E46;
+}
+  
+*{
+    /* Typography */
+    font-family: 'Raleway',sans-serif;
+
+    /* Layout */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:var(--base);
+}
+
+
+img{
+    cursor: pointer;
+}
+
+.line{
+    border-top: 1px solid var(--base-lighten);
+    border-bottom: none;
+}
+
+/* Content container */
+.content{
+    padding: 145px;
+    padding-top: 100px;
+    margin: auto;
+    max-width: 90vw;
+}
+
+/* Status */
+.status__date{
+    color:var(--secondary-color);
+}
+.status__active_task{
+    font-weight: 700;
+    color:var(--primary-color);
+}
+
+/* Task input */
+.task_input{
+    margin: 7vh 0;
+    margin-bottom: 30px;
+}
+.task_input__input{
+    /* Layout */
+    width: 40%;
+    height: 40px;
+    padding-left: 20px;
+
+    /* Effect */
+    border-radius: 5px;
+    
+    /* Color */
+    outline: none;
+    border:1px solid  var(--border);
+    background-color: var(--base-lighten);
+}
+.task_input__submit{
+    /* Layout */
+    height: 40px;
+    width: 110px;
+    padding: 0 20px;
+    margin-right: 15px;
+
+    /* Effect */
+    cursor: pointer;
+    border-radius: 5px;
+ 
+    /* Color */
+    background-color: var(--primary-color);
+    color: var(--base);
+    border:none;
+    outline: none;
+}
+
+/* Tasks */
+.task{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    color: var(--secondary-color);
+}
+.task__left{
+    display: flex;
+    align-items: center;
+}
+.task__left__desc{
+    /* Layout */
+    margin-left: 18px;
+
+    /* Typography */
+    /* text-decoration: line-through; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--base); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--base-lighten); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
