@@ -1,126 +1,90 @@
-// Get the tasks div
-let Tasks = document.querySelector('.tasks');
-
 function createTask() {
-    // Get the task text input
-    let text_input = document.querySelector('.task_input__input');
-    let text_input_value = text_input.value;
+    let input = document.querySelector('.task_input__input');
+    let task = input.value;
 
-    // Create new Task
-    let Task = createTaskElement(text_input_value);
+    let Tasks = document.querySelector('.tasks');
 
-    // Add the new Task to tasks div
-    Tasks.appendChild(Task);
+    // create new element
+    let Task = document.createElement('div');
+    Task.className = 'task';
+
+    let task_left = document.createElement('div');
+    task_left.className = 'task__left';
+
+    // For task left
+    let task_left_img = document.createElement('img');
+    task_left_img.src = "/images/circle_hollow.svg";
+    task_left_img.className = 'task__left__image'
+    task_left_img.onclick = checked;
+
+
+    let task_left_desc = document.createElement('p');
+    task_left_desc.innerText = task;
+    task_left_desc.className = 'task__left__desc';
+
+    // Insert task left elemements into Task
+    task_left.appendChild(task_left_img);
+    task_left.appendChild(task_left_desc);
+
+    let delete_img = document.createElement('img');
+    delete_img.src = "/images/delete.svg";
+    delete_img.onclick = delete_task;
+
+    // append task_left and delete img
+    Task.appendChild(task_left);
+    Task.appendChild(delete_img);
+
     let line = document.createElement('hr');
     line.className = 'line';
+
+    Tasks.appendChild(Task);
     Tasks.appendChild(line);
 
-    // update task status
-    update_tasks_status();
+    createTaskElement(task);
+    update_status_task();
 }
 
-function createTaskElement(text) {
-    // Create task div
-    let task_div = document.createElement('div');
-    task_div.className = 'task';
+function checked(event) {
+    let img = event.target;
+    let src = img.src;
 
-    // Create task left div
-    let task_left_div = document.createElement('div');
-    task_left_div.className = 'task__left';
+    let p = img.nextSibling;
 
-
-    // Create delete image
-    let task_delete_image = document.createElement('img');
-    task_delete_image.src = '/images/delete.svg';
-    task_delete_image.alt = 'delete';
-    task_delete_image.className = 'task__delete__image';
-    task_delete_image.onclick = delete_task;
-
-    // Append task left div and delete image to task div
-    task_div.appendChild(task_left_div);
-    task_div.appendChild(task_delete_image);
-
-    // Create circle image
-    let task_left_image = document.createElement('img');
-    task_left_image.src = '/images/circle_hollow.svg';
-    task_left_image.alt = 'uncheck';
-    task_left_image.className = 'task__left__image';
-    task_left_image.onclick = check_task;
-
-    // Create task left description
-    let task_left_desc = document.createElement('p');
-    task_left_desc.className = 'task__left__desc';
-    task_left_desc.innerText = text;
-
-    // Append circle image and task left description to task left div
-    task_left_div.appendChild(task_left_image);
-    task_left_div.appendChild(task_left_desc);
-
-    return task_div;
-}
-
-function check_task(event) {
-    // Get the image element
-    let target = event.target;
-
-    // Get the task description element
-    let task_desc = target.nextSibling;
-
-    // Change the target src image
-    let src = target.src;
     if (src.includes('/images/circle_hollow.svg')) {
-        // means task haven't completed
-        target.src = '/images/circle_ticked.svg';
-        task_desc.style.textDecoration = 'line-through';
+        img.src = '/images/circle_ticked.svg';
+        p.style.textDecoration = 'line-through';
     } else {
-        // means task was completed
-        target.src = '/images/circle_hollow.svg';
-        task_desc.style.textDecoration = 'none';
+        img.src = '/images/circle_hollow.svg';
+        p.style.textDecoration = 'none';
     }
 
-    // update task status
-    update_tasks_status();
+    update_status_task();
 }
 
 function delete_task(event) {
-    // Get the button element
-    let target = event.target;
+    let img = event.target;
+    let parent = img.parentNode;
+    let line = parent.nextSibling;
+    line.remove();
+    parent.remove();
 
-    // Get the whole task element
-    let Task = target.parentNode;
 
-    // Get the line
-    let line = Task.nextSibling;
-
-    // Delete both in the Tasks div
-    Tasks.removeChild(Task);
-    Tasks.removeChild(line);
-
-    // update task status
-    update_tasks_status();
+    update_status_task();
 }
 
-function update_tasks_status() {
-    let children = Tasks.childNodes;
+function update_status_task() {
+    let status_task = document.querySelector('.status__active_task')
+    let Tasks = document.querySelector('.tasks');
     let amount = 0;
 
-    for (let child of children) {
-        if (child.querySelector) {
-            let image = child.querySelector('.task__left__image');
+    let tasks = Tasks.querySelectorAll('.task');
 
-            // if image exists
-            if (image) {
-                // check if not complete yet
-                let src = image.src;
-                if (src.includes('/images/circle_hollow.svg')) {
-                    // means task haven't completed
-                    amount += 1;
-                }
-            }
+    for (let i = 0; i < tasks.length; i++) {
+        let img = tasks[i].querySelector('.task__left__image');
+        if (img.src.includes('/images/circle_hollow.svg')) {
+            amount++;
         }
     }
 
-    // Get status active task element
-    let active_task = document.querySelector('.status__active_task');
-    active_task.innerText = `${amount} active task(s) left.`;
+    status_task.innerText = amount + " active tasks";
 }
