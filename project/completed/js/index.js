@@ -31,7 +31,7 @@ function createTaskElement(text) {
 
     // Create delete image
     let task_delete_image = document.createElement('img');
-    task_delete_image.src = '/images/delete.svg';
+    task_delete_image.src = './images/delete.svg';
     task_delete_image.alt = 'delete';
     task_delete_image.className = 'task__delete__image';
     task_delete_image.onclick = delete_task;
@@ -42,7 +42,7 @@ function createTaskElement(text) {
 
     // Create circle image
     let task_left_image = document.createElement('img');
-    task_left_image.src = '/images/circle_hollow.svg';
+    task_left_image.src = './images/circle_hollow.svg';
     task_left_image.alt = 'uncheck';
     task_left_image.className = 'task__left__image';
     task_left_image.onclick = check_task;
@@ -70,11 +70,11 @@ function check_task(event) {
     let src = target.src;
     if (src.includes('/images/circle_hollow.svg')) {
         // means task haven't completed
-        target.src = '/images/circle_ticked.svg';
+        target.src = './images/circle_ticked.svg';
         task_desc.style.textDecoration = 'line-through';
     } else {
         // means task was completed
-        target.src = '/images/circle_hollow.svg';
+        target.src = './images/circle_hollow.svg';
         task_desc.style.textDecoration = 'none';
     }
 
